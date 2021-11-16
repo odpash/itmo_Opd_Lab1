@@ -1,1 +1,33 @@
-init
+mkdir -p lab0/azumarill3/lickilicky lab0/azumarill3/reuniclus lab0/azumarill3/milotic lab0/azumarill3/tangrowth lab0/dusclops5/lilligant lab0/hitmontop7/cacturne lab0/hitmontop7/lucario
+sh -c 'cat << tag >> lab0/azumarill3/eevee
+weight=14.3 height=12.0 atk=6 def=5
+> tag'
+sh -c 'cat << tag >> lab0/buizel3
+Тип диеты
+Omnivore
+> tag'
+sh -c 'cat << tag >> lab0/dusclops5/piplup
+Живет Beach Taiga Tundra
+> tag'
+
+sh -c 'cat << tag >> lab0/dusclops5/zubat
+Способности Venom
+Mach Speed Inner Focus Anticipation
+> tag'
+
+sh -c 'cat << tag >> lab0/foongus0
+Тип покемона GRASS
+POISON
+> tag'
+
+sh -c 'cat << tag >> lab0/golem9
+Ходы Ancientpower Block Body Slam Counter Dynamicpunch
+Earth Power Fire Punch Focus Punch Fury Cutter Iron Defence Iron Head
+Mega Kick Mega Punch Metronome Mud-Slap Rollout Seismic Toss Sleep
+Talk Snore Stealth Rock Sucker Punch Superpower
+Thunderpuch
+> tag'
+
+sh -c 'cat << tag >> lab0/hitmontop7/goldeen
+Развитые способности Lightningrod
+> tag'
