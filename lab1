@@ -82,14 +82,15 @@ ln lab0/buizel3 lab0/hitmontop7/goldeenbuizel
 
 # Block № 4 start
 
+cd lab0/azumarill3
 touch /tmp/olegpash-results /tmp/olegpash-errors
 cat $(ls -p | grep -v /) | wc -m > /tmp/olegpash-results 2>&1
 cd ..
-ls -lr | cat | grep ca | sort -k7 2> /dev/null
-sort $(ls -R -d /lab0/g*) | cat -n
-sort -r $(ls -R -d /lab0/* | grep "\t$") | cat -n 2> /tmp/olegpash-errors
-not worked #ls --sort=size -l /lab0/l* | tail -n 4 2>&1
-ls -lr lab0/* | head -n 4 2> /tmp/olegpash-errors
+ls -lR | cat | grep ca | sort -k7 2> /dev/null
+sort $(ls -R -d g*) | cat -n
+ls -R | grep t$ | cat -n | sort -r 2> /tmp/olegpash-errors
+ls -lR | grep "^-" | sort -k9 | tail -4 | sort -k5 -r 2>&1
+ls -lR | grep ^- | sort -k5 | head -4 2> /tmp/olegpash-errors
 
 # Block № 4 end
 
