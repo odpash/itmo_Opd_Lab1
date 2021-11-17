@@ -105,8 +105,8 @@ rm -f lab0/foongus0
 rm -f lab0/dusclops5/zubat
 rm -f lab0/dusclops5/zubatgol*
 rm -f lab0/hitmontop7/goldeenbuiz*
-rmdir -rf dusclops5
-rmdir -rf lab0/azumarill3/milotic
+rm -rf dusclops5
+rm -rf lab0/azumarill3/milotic
 }
 # Block № 5 end
 
