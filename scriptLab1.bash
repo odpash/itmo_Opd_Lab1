@@ -130,12 +130,14 @@ then
 blockOne
 blockTwo
 blockThree
+blockTwo
 blockFour
 elif [ $n -eq 5 ];
 then 
 blockOne
 blockTwo
 blockThree
+blockTwo
 blockFour
 blockFive
 else
