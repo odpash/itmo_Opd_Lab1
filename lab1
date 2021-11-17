@@ -1,33 +1,107 @@
+# Block №1 start
 mkdir -p lab0/azumarill3/lickilicky lab0/azumarill3/reuniclus lab0/azumarill3/milotic lab0/azumarill3/tangrowth lab0/dusclops5/lilligant lab0/hitmontop7/cacturne lab0/hitmontop7/lucario
-sh -c 'cat << tag >> lab0/azumarill3/eevee
+touch lab0/azumarill3/eevee lab0/buizel3 lab0/dusclops5/piplup lab0/dusclops5/zubat lab0/foongus0 lab0/golem9 lab0/hitmontop7/goldeen
+
+cat > lab0/azumarill3/eevee << EOF
 weight=14.3 height=12.0 atk=6 def=5
-> tag'
-sh -c 'cat << tag >> lab0/buizel3
+EOF
+
+cat > lab0/buizel3 << EOF
 Тип диеты
 Omnivore
-> tag'
-sh -c 'cat << tag >> lab0/dusclops5/piplup
-Живет Beach Taiga Tundra
-> tag'
+EOF
 
-sh -c 'cat << tag >> lab0/dusclops5/zubat
+
+cat > lab0/dusclops5/piplup << EOF
+Живет Beach Taiga Tundra
+EOF
+
+
+cat > lab0/dusclops5/zubat << EOF
 Способности Venom
 Mach Speed Inner Focus Anticipation
-> tag'
+EOF
 
-sh -c 'cat << tag >> lab0/foongus0
+cat > lab0/foongus0 << EOF
 Тип покемона GRASS
 POISON
-> tag'
+EOF
 
-sh -c 'cat << tag >> lab0/golem9
-Ходы Ancientpower Block Body Slam Counter Dynamicpunch
-Earth Power Fire Punch Focus Punch Fury Cutter Iron Defence Iron Head
-Mega Kick Mega Punch Metronome Mud-Slap Rollout Seismic Toss Sleep
-Talk Snore Stealth Rock Sucker Punch Superpower
-Thunderpuch
-> tag'
-
-sh -c 'cat << tag >> lab0/hitmontop7/goldeen
+cat > lab0/hitmontop7/goldeen << EOF
 Развитые способности Lightningrod
-> tag'
+EOF
+
+echo ‘Ходы Ancientpower Block Body Slam Counter Dynamicpunch’ > lab0/golem9
+echo ‘Earth Power Fire Punch Focus Punch Fury Cutter Iron Defence Iron Head’ > lab0/golem9
+echo ‘Mega Kick Mega Punch Metronome Mud-Slap Rollout Seismic Toss Sleep’ > lab0/golem9
+echo ‘Talk Snore Stealth Rock Sucker Punch Superpower’ > lab0/golem9
+echo ‘Thunderpuch’ > lab0/golem9
+
+# Block № 1 end
+
+
+# Block № 2 start
+
+chmod 570 lab0/azumarill3/ 
+chmod 524 lab0/azumarill3/lickilicky/
+chmod 500 lab0/azumarill3/reuniclus/
+chmod u=rwx,g=wx,o=wx lab0/azumarill3/milotic/
+chmod u-rwx,g=rw,o=w lab0/azumarill3/eevee
+chmod ugo=wx lab0/azumarill3/tangrowth/
+chmod 046 lab0/buizel3
+chmod 373 lab0/dusclops5/
+chmod u=rw,g=w,o-rwx lab0/dusclops5/piplup
+chmod 577 lab0/dusclops5/lilligant/
+chmod ug=r,o-rwx lab0/dusclops5/zubat
+chmod 440 lab0/foongus0
+chmod ug-rwx,o=r lab0/golem9
+chmod u=rx,g=rwx,o=wx lab0/hitmontop7/
+chmod ugo=r lab0/hitmontop7/goldeen
+chmod u=wx,go=x lab0/hitmontop7/cacturne/
+chmod 373 lab0/hitmontop7/lucario/
+chmod -R 700 lab0
+
+# Block № 2 end
+
+
+# Block № 3 start
+
+cp -r lab0/azumarill3 lab0/azumarill3/lickilicky/
+cat lab0/golem9 > lab0/dusclops5/zubatgolem
+cd lab0
+ln -s dusclops5 Copy_53
+cd ..
+cp lab0/golem9 lab0/azumarill3/milotic
+cat lab0/dusclops5/zubat lab0/dusclops5/piplup > lab0/buizel3_48
+rm lab0/dusclops5/zubatgolem
+ln -s lab0/golem9 lab0/dusclops5/zubatgolem
+ln lab0/buizel3 lab0/hitmontop7/goldeenbuizel 
+
+# Block № 3 end
+
+
+# Block № 4 start
+
+touch /tmp/olegpash-results /tmp/olegpash-errors
+cat $(ls -p | grep -v /) | wc -m > /tmp/olegpash-results 2>&1
+cd ..
+ls -lr | cat | grep ca | sort -k7 2> /dev/null
+sort $(ls -R -d /lab0/g*) | cat -n
+sort -r $(ls -R -d /lab0/* | grep "\t$") | cat -n 2> /tmp/olegpash-errors
+not worked #ls --sort=size -l /lab0/l* | tail -n 4 2>&1
+ls -lr lab0/* | head -n 4 2> /tmp/olegpash-errors
+
+# Block № 4 end
+
+
+# Block № 5 start
+
+cd ..
+rm -f lab0/foongus0
+rm -f lab0/dusclops5/zubat
+rm -f lab0/dusclops5/zubatgol*
+rm -f lab0/hitmontop7/goldeenbuiz*
+rmdir -rf dusclops5
+rmdir -rf lab0/azumarill3/milotic
+
+# Block № 5 end
